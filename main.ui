@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>990</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Century Gothic</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>PyPass</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/main.png</normaloff>icons/main.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>0</y>
+      <width>721</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans</family>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>true</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="textElideMode">
+     <enum>Qt::ElideRight</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::CustomDashLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>Название</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Логин</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Пароль</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>URL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Заметки</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Группа</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>271</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans</family>
+     </font>
+    </property>
+    <column>
+     <property name="text">
+      <string>База данных</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTextEdit" name="info">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>480</y>
+      <width>991</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans</family>
+     </font>
+    </property>
+    <property name="lineWrapMode">
+     <enum>QTextEdit::NoWrap</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; dir='rtl' style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>990</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #d3d3d3</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>125</y>
+      <width>143</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="add"/>
+    <addaction name="open"/>
+    <addaction name="save"/>
+    <addaction name="separator"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Редактировать</string>
+    </property>
+    <addaction name="add_data"/>
+    <addaction name="edit"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Сгенерировать</string>
+    </property>
+    <addaction name="passwordgenerator"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>О программе</string>
+    </property>
+    <addaction name="helper"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="add">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/add.png</normaloff>
+     <normalon>icons/add.png</normalon>icons/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/exit.png</normaloff>icons/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+  <action name="open">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/open .png</normaloff>icons/open .png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+  <action name="add_data">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/add_data.png</normaloff>icons/add_data.png</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить данные</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+  <action name="generate_password">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/passgen.png</normaloff>icons/passgen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сгенерировать пароль</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/save.png</normaloff>icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+  <action name="passwordgenerator">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/passgen.png</normaloff>icons/passgen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сгенерировать пароль</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+  <action name="edit">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/edit.png</normaloff>icons/edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Редактировать базу данных</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+  <action name="helper">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/help.png</normaloff>icons/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Инструкция</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans</family>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>treeWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
